@@ -282,7 +282,7 @@ void Encode(void)
     // std::cout << "In : " << textsize << " bytes\n";
     printf("In : %ld bytes\n", textsize); // Encoding is done.
     // std::cout << "Out: " << outFile.tellp() << " bytes" << std::endl;
-    printf("Out: %ld bytes\n", outFile.tellp());
+    printf("Out: %ld bytes\n", (double)outFile.tellp());
     // std::cout << "Out/In: " << (double)outFile.tellp() / textsize << std::endl;
     printf("Out/In: %.3f\n", (double)outFile.tellp() / textsize);
 }
