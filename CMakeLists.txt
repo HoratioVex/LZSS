@@ -4,6 +4,7 @@ project(LZSS_Ref)               # Create project "simple_example"
 
 # Add main.cpp file of the project root directory as a source file
 set(SOURCE_FILES 2022/lzss.cpp)
+set(RUNTIME_OUTPUT_DIRECTORY Build/)
 
 # Add executable target with source files listed in SOURCE_FILES variable
 add_executable(LZSS_Ref ${SOURCE_FILES})
