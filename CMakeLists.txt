@@ -8,3 +8,4 @@ set(RUNTIME_OUTPUT_DIRECTORY Build/)
 
 # Add executable target with source files listed in SOURCE_FILES variable
 add_executable(LZSS_Ref ${SOURCE_FILES})
+add_executable(LZSS_Org 1989/LZSS.C)
