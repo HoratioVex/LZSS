@@ -279,12 +279,12 @@ void Encode(void)
     if (code_buf_ptr > 1) // Send remaining code.
         for (i = 0; i < code_buf_ptr; i++)
             outFile.put(code_buf[i]);
-    // std::cout << "In : " << textsize << " bytes\n";
-    printf("In : %ld bytes\n", textsize); // Encoding is done.
-    // std::cout << "Out: " << outFile.tellp() << " bytes" << std::endl;
-    printf("Out: %ld bytes\n", (double)outFile.tellp());
-    // std::cout << "Out/In: " << (double)outFile.tellp() / textsize << std::endl;
-    printf("Out/In: %.3f\n", (double)outFile.tellp() / textsize);
+    std::cout << "In : " << textsize << " bytes\n";
+    //printf("In : %ld bytes\n", textsize); // Encoding is done.
+    std::cout << "Out: " << outFile.tellp() << " bytes" << std::endl;
+    //printf("Out: %ld bytes\n", (double)outFile.tellp());
+    std::cout << "Out/In: " << (double)outFile.tellp() / textsize << std::endl;
+    //printf("Out/In: %.3f\n", (double)outFile.tellp() / textsize);
 }
 
 /*
